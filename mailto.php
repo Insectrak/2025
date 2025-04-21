@@ -15,7 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Envío del correo electrónico
     if (mail($destinatario, $asunto, $cuerpo, $headers)) {
-        echo "<p>¡Gracias por tu mensaje! Te responderemos a la brevedad.</p>";
+        // Redirigir al usuario a la página "Gracias"
+        header("Location: /gracias"); // Asegúrate de que esta ruta coincida con la de tu componente Gracias en React
+        exit(); // Es importante terminar la ejecución del script después de la redirección
     } else {
         echo "<p>Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.</p>";
     }
