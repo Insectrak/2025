@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $productoServicio = $_POST["producto_servicio"];
     $detalleReclamo = $_POST["detalle_reclamo"];
 
-    $destinatario = "killersquadron@gmail.com"; // Reemplaza con el correo para reclamos
+    $destinatario = "reclamos@raicessostenibles.com"; // Reemplaza con el correo para reclamos
     $asunto = "Nuevo Reclamo del Libro de Reclamaciones";
     $cuerpo = "Nombre Completo: " . $nombreCompleto . "\n";
     $cuerpo .= "Correo Electrónico: " . $correo . "\n";

@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
 
-    $destinatario = "killersquadron@gmail.com"; // Reemplaza con tu dirección de correo electrónico
+    $destinatario = "contacto@raicessostenibles.com"; // Reemplaza con tu dirección de correo electrónico
     $asunto = "Nuevo mensaje del formulario de contacto";
     $cuerpo = "Nombre: " . $nombre . "\n";
     $cuerpo .= "Correo Electrónico: " . $email . "\n";
