@@ -13,12 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $destinatario = "reclamos@raicessostenibles.com"; // Reemplaza con el correo para reclamos
     $asunto = "Nuevo Reclamo del Libro de Reclamaciones";
     $cuerpo = "Nombre Completo: " . $nombreCompleto . "\n";
-    $cuerpo .= "Correo Electrónico: " . $correo . "\n";
+    $cuerpo .= "Email: " . $correo . "\n";
     $cuerpo .= "DNI o CE: " . $dniCe . "\n";
     $cuerpo .= "Teléfono: " . $telefono . "\n";
     $cuerpo .= "Provincia: " . $provincia . "\n";
     $cuerpo .= "Distrito: " . $distrito . "\n";
-    $cuerpo .= "Dirección: " . $direccion . "\n";
+    $cuerpo .= "Direccion: " . $direccion . "\n";
     $cuerpo .= "Producto/Servicio: " . $productoServicio . "\n";
     $cuerpo .= "Detalle del Reclamo:\n" . $detalleReclamo . "\n";
 
